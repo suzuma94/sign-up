@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <title>Sign up</title>
+</head>
+<body>
+   <div class="img_left">
+       <div class="wrapper"></div>
+        <span class="odin-txt">
+            <img class="odin" src="odin.png">
+            ODIN
+        </span>
+       <p class="img-desc">Pohto by Halie West on <a href="https://unsplash.com/photos/25xggax4bSA">Unsplashed</a></p>
+   </div>
+   <form id="form" action="/" method="get">
+        <div class="cale">
+            <div class="right_text">
+                <p>
+                    This is not a real online service! You know you need something<br> like this
+                    in your life to help you realzie your deepest dreams.<br>
+                        Sign up now to get started.
+                </p>
+            </div>
+            <p class="sign-text">Let's do this!</p>
+            <div class="name_last_lab">
+                <label for="f_name">
+                    FIRST NAME<abbr style="color:red" title="REQUIRED FIELD"><strong>*</strong></abbr>
+                </label>
+                <label for="l_name">LAST NAME</label>
+            </div>
+            <div class="name_last_input">
+                <input type="text" id="f_name" name="name" required>
+                <input type="text" id="l_name" name="last_name">
+            </div>
+            <div class="mail_phone_lab">
+                <label for="u_mail">
+                    E-MAIL<abbr style="color:red;font-family: Verdana, Geneva, Tahoma, sans-serif;" title="REQUIRED FIELD"><strong>*</strong></abbr>
+                </label>
+                <label for="u_phone">PHONE NUMBER</label>
+            </div>
+            <div class="mail_phone_input">
+                <input type="email" id="u_mail" name="mail"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                placeholder="example@something.com" required>
+                <input type="tel" id="u_phone" name="phone" placeholder="123-456-7890"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+            </div>
+            <div class="password_lab">
+                <label for="u_pwd">
+                    PASSWORD<abbr style="color:red" title="REQUIRED FIELD"><strong>*</strong></abbr>
+                </label>
+                <label for="confirm_pwd">CONFIRM PASSWORD</label>
+            </div>
+            <div class="password_input">
+                <input type="password" id="u_pwd" name="password"
+                pattern=".{6,}" onchange="this.setAttribute('value',this.value);" required>
+                <input type="password" id="confirm_pwd" name="conf_password"
+                 required onchange="this.setAttribute('value',this.value);"
+                 onkeyup="passMatch();" >
+            </div>
+            <div class="error_msg">
+                
+            </div>
+            <div class="bttn">
+                <button type="submit" value="Submit">Create Account</button>
+                <p>Already have an accoun?<a href="index.html">Log</a> <a href="index.html">in</a></p>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

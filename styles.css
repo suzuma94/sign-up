@@ -1,0 +1,185 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    font-size: 100%;
+}
+
+
+.img_left {
+    background: url(leaf.jpg);
+    background-size: cover;
+    border-radius: 13px;
+    width: 50%;
+    height: 100%;
+    position: relative;
+    font-size: 100%;
+    border: 1.5px solid white;
+}
+
+.odin {
+    width: 25%;
+    height: 20%;
+    
+}
+
+.odin-txt {
+    color: white;
+    position: absolute;
+    left: 20%;
+    display: flex;
+    align-items: center;
+    top: 25%;
+    font-size: 5em;
+    
+    
+
+} 
+
+.img-desc {
+    position: absolute;
+    bottom: 3px;
+    left: 35%;
+    color: white;
+}
+
+a:visited {
+    color: orangered;
+    font-weight: bold;
+    font-size: 120%;
+
+}
+
+.wrapper {
+    background: black;
+    margin-top: 20%;
+    opacity: 0.7;
+    height: 280px;
+}
+
+
+.right_text {
+    width: 80%;
+    overflow-wrap: break-word;
+    padding-top: 5%;
+    padding-left: 100px;
+    padding-right: 100px;
+    font-size: 22px;
+    background-color: rgb(238, 236, 236);
+    height: 195px;
+    flex-flow: column;
+    border-radius: 13px;
+    border: 1.5px solid white;
+    
+}
+
+.cale {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+   
+}
+
+.sign-text {
+    font-size: 22px;
+    padding-left: 8%;
+}
+
+.name_last_lab {
+	padding-left: 8%;
+	gap: 283px;
+	display: flex;
+	font-size: 13px;
+}
+
+.name_last_input {
+	padding-left: 8%;
+	gap: 178px;
+	display: flex;
+    margin-bottom: 18px;
+}
+
+
+.mail_phone_lab {
+	padding-left: 8%;
+	gap: 319px;
+	display: flex;
+	font-size: 13px;
+}
+
+
+.mail_phone_input {
+    padding-left: 8%;
+	gap: 178px;
+	display: flex;
+    margin-bottom: 18px;
+}
+
+.password_lab {
+	padding-left: 8%;
+	gap: 289px;
+	display: flex;
+	font-size: 13px;
+	position: relative;
+}
+
+.password_input {
+    padding-left: 8%;
+	gap: 178px;
+	display: flex;
+    margin-bottom: 0px;
+    margin-bottom: 35px;
+    
+}
+
+.bttn {
+	padding-top: 10px;
+	padding-left: 8%;
+	background: rgb(238, 236, 236);
+	height: 619px;
+    border-radius: 13px;
+    border: 1.5px solid white;
+    margin-top: 10px;
+}
+
+button[type="submit"] {
+    margin-bottom: 20px;
+    background-color: #6bb16d;
+    font-size: 18px;
+    border-radius: 5px;
+    height: 60px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+    transition-duration: 0.8s;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    
+}
+
+button[type="submit"]:hover {
+    cursor: pointer;
+    background-color: #089c0d;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+}
+
+input {
+    border-radius: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.error_msg {
+	top: 407px;
+	position: absolute;
+	left: 1006px;
+    color: red;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+input:invalid {
+    border: 1.5px solid red;
+}
